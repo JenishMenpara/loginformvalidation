@@ -1,0 +1,32 @@
+.ff{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.email{
+    width: 100%;
+}
+
+.psaa{
+    width: 100%;
+}
+
+#mainfc{
+    border: 2px solid red;
+    margin-left: 10%;
+    margin-right: 6%;
+    padding: 1%;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    box-shadow: 7px 7px 8px black;
+    
+}
+.m{
+    margin-bottom: 25px;
+}
+
+.btn{
+    margin-top: 25px;
+}

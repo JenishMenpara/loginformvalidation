@@ -30,3 +30,20 @@
 .btn{
     margin-top: 25px;
 }
+ #wom {
+     display: none;
+     color: red;
+
+ }
+
+ #wop{
+     display: none;
+     color: red;
+ }
+
+ #notkhali{
+        display: none;
+        color: red;
+        text-align: center;
+        font-size: 30px;
+ }

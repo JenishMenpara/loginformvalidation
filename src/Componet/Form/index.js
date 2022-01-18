@@ -1,6 +1,8 @@
 
 import './index.css'
-import React, { Component } from 'react'
+//import React, { Component } from 'react'
+import React ,{useState} from 'react';
+export {loginC};
 
 
 const loginC = [{
@@ -32,13 +34,13 @@ const validation = () => {
     let password = document.getElementById("passw").value;
 
     for (let index = 0; index < loginC.length; index++) {
-        if (gemail != "" || password != "") 
+        if (gemail !== "" || password !== "") 
         {
             if (loginC[index]['Email'] === gemail) {
 
                 if (loginC[index]['Password'] === password) {
 
-                    document.getElementById("mainfc").innerHTML = `<h1> ${loginC[index]["Name"]} </h1>`;
+                     document.getElementById("mainfc").innerHTML = `<h1> ${loginC[index]["Name"]} </h1>`;
                     break;
 
                 }
@@ -54,7 +56,7 @@ const validation = () => {
 
             }
         } else{
-            //alert("not blnck")
+            //alert("not blank")
             document.getElementById("notkhali").style.display = "block";
             document.getElementById("notkhali").style.display = "block";
             break;
@@ -67,11 +69,10 @@ const validation = () => {
 
 
 
-
-export default class indexf extends Component {
-    render() {
-        return (
-            <div>
+export default function indexf() {
+   // const [name, setName] = useState("Your Login Data")
+    return (
+        <div>
                 <form>
                     <div id="mainfc">
                         <div className="m">
@@ -86,15 +87,18 @@ export default class indexf extends Component {
                             <div id='wop'>Password is not valid</div>
                         </div>
 
-                        <div id='notkhali'>Not Blank</div>
+                        <div id='notblank'>Not Blank</div>
 
 
-                        <button type="button" className="btn btn-primary" onClick={validation}>Submit</button>
+                        <button type="button"  className="btn btn-primary" onClick={validation}>Submit</button>
 
 
                     </div>
                 </form>
             </div>
-        )
-    }
+    )
 }
+
+
+
+

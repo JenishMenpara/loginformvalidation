@@ -24,17 +24,29 @@ export default  class index extends Component {
 
 /* USING FUNCTION COMPONET */
 
-import React from 'react'
+import React from 'react';
 
-export default function index (props) {
-   
+
+
+export default function index(props) {
+
 
     return (
-        <div className="container">
-            <p> {props.name} PAGE</p>
-            <p>Don't share your {props.detailed}</p>
-        </div>
-       
+        <>
+            <nav className={`navbar navbar-expand-lg navbar-${props.mod} bg-${props.mod}`} >
+                <div className="container-fluid">
+                        <div className={`form-check form-switch text-${props.mod === 'light' ? 'dark' : 'light'}`}>
+                            <input className="form-check-input" onClick={props.toggleMode} type="checkbox" id="flexSwitchCheckDefault" />
+                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mod</label>
+                        </div>    
+                </div>
+            </nav>
+            {/* <div className="container">
+                <p> Login PAGE</p>
+                <p>Don't share your {props.detailed}</p>
+            </div> */}
+
+        </>
     )
 }
 

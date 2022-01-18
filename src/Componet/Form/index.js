@@ -57,8 +57,8 @@ const validation = () => {
             }
         } else{
             //alert("not blank")
-            document.getElementById("notkhali").style.display = "block";
-            document.getElementById("notkhali").style.display = "block";
+            document.getElementById("notblank").style.display = "block";
+            document.getElementById("notblank").style.display = "block";
             break;
         }
 

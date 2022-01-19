@@ -12,19 +12,19 @@ const loginC = [{
 
 },
 {
-    "Name": "Priya Bhut",
-    "Email": "priyabhut@gmail.com",
-    "Password": "hey@priya"
+    "Name": "MJ",
+    "Email": "mj@gmail.com",
+    "Password": "mj123"
 },
 {
-    "Name": "Jagat Vasveliya",
-    "Email": "jagat0@gmail.com",
+    "Name": "king",
+    "Email": "king@gmail.com",
     "Password": "123"
 },
 {
-    "Name": "Arshit Khoshiya",
-    "Email": "arshit@gmail.com",
-    "Password": "hey@aarshit"
+    "Name": "hello",
+    "Email": "hello@gmail.com",
+    "Password": "123"
 }
 ];
 

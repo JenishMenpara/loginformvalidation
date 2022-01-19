@@ -86,7 +86,7 @@ export default class indexf extends Component {
                             <div id='wop'>Password is not valid</div>
                         </div>
 
-                        <div id='notkhali'>Not Blank</div>
+                        <div id='notblank'>Not Blank</div>
 
 
                         <button type="button" className="btn btn-primary" onClick={validation}>Submit</button>
